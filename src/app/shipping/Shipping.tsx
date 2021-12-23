@@ -8,6 +8,7 @@ import { withCheckout, CheckoutContextProps } from '../checkout';
 import { EMPTY_ARRAY } from '../common/utility';
 import { LoadingOverlay } from '../ui/loading';
 
+import { statesByCountry } from './constants';
 import { UnassignItemError } from './errors';
 import getShippableItemsCount from './getShippableItemsCount';
 import getShippingMethodId from './getShippingMethodId';
@@ -351,6 +352,21 @@ export function mapToShippingProps({
 
     const shippingAddress = !shouldShowMultiShipping && consignments.length > 1 ? undefined : getShippingAddress();
 
+    const getFieldsWithCustomStates = (countryCode: string) => {
+        const fields = getShippingAddressFields(countryCode);
+        const stateOrProvinceField = fields.find(field => field.name === 'stateOrProvince');
+
+        if (countryCode && statesByCountry.hasOwnProperty(countryCode) && stateOrProvinceField && !stateOrProvinceField.options) {
+            stateOrProvinceField.options = {
+                items: statesByCountry[countryCode],
+            };
+            stateOrProvinceField.fieldType = 'dropdown';
+            stateOrProvinceField.required = true;
+        }
+
+        return fields;
+    };
+
     return {
         assignItem: checkoutService.assignItemsToAddress,
         billingAddress: getBillingAddress(),
@@ -363,7 +379,7 @@ export function mapToShippingProps({
         createCustomerAddress: checkoutService.createCustomerAddress,
         deinitializeShippingMethod: checkoutService.deinitializeShipping,
         deleteConsignments: deleteConsignmentsSelector({ checkoutService, checkoutState }),
-        getFields: getShippingAddressFields,
+        getFields: getFieldsWithCustomStates,
         googleMapsApiKey,
         initializeShippingMethod: checkoutService.initializeShipping,
         isGuest: customer.isGuest,
