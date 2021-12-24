@@ -1,139 +1,139 @@
 export const statesByCountry: any = {
     CN: [
         {
-            value: 'CN-45',
+            value: 'Guangxi',
             label: 'Guangxi',
         },
         {
-            value: 'CN-15',
+            value: 'Nei Mongol',
             label: 'Nei Mongol',
         },
         {
-            value: 'CN-64',
+            value: 'Ningxia',
             label: 'Ningxia',
         },
         {
-            value: 'CN-65',
+            value: 'Xinjiang',
             label: 'Xinjiang',
         },
         {
-            value: 'CN-54',
+            value: 'Xizang',
             label: 'Xizang',
         },
         {
-            value: 'CN-11',
+            value: 'Beijing',
             label: 'Beijing',
         },
         {
-            value: 'CN-50',
+            value: 'Chongqing',
             label: 'Chongqing',
         },
         {
-            value: 'CN-31',
+            value: 'Shanghai',
             label: 'Shanghai',
         },
         {
-            value: 'CN-12',
+            value: 'Tianjin',
             label: 'Tianjin',
         },
         {
-            value: 'CN-34',
+            value: 'Anhui',
             label: 'Anhui',
         },
         {
-            value: 'CN-35',
+            value: 'Fujian',
             label: 'Fujian',
         },
         {
-            value: 'CN-62',
+            value: 'Gansu',
             label: 'Gansu',
         },
         {
-            value: 'CN-44',
+            value: 'Guangdong',
             label: 'Guangdong',
         },
         {
-            value: 'CN-52',
+            value: 'Guizhou',
             label: 'Guizhou',
         },
         {
-            value: 'CN-46',
+            value: 'Hainan',
             label: 'Hainan',
         },
         {
-            value: 'CN-13',
+            value: 'Hebei',
             label: 'Hebei',
         },
         {
-            value: 'CN-23',
+            value: 'Heilongjiang',
             label: 'Heilongjiang',
         },
         {
-            value: 'CN-41',
+            value: 'Henan',
             label: 'Henan',
         },
         {
-            value: 'CN-42',
+            value: 'Hubei',
             label: 'Hubei',
         },
         {
-            value: 'CN-43',
+            value: 'Hunan',
             label: 'Hunan',
         },
         {
-            value: 'CN-32',
+            value: 'Jiangsu',
             label: 'Jiangsu',
         },
         {
-            value: 'CN-36',
+            value: 'Jiangxi',
             label: 'Jiangxi',
         },
         {
-            value: 'CN-22',
+            value: 'Jilin',
             label: 'Jilin',
         },
         {
-            value: 'CN-21',
+            value: 'Liaoning',
             label: 'Liaoning',
         },
         {
-            value: 'CN-63',
+            value: 'Qinghai',
             label: 'Qinghai',
         },
         {
-            value: 'CN-61',
+            value: 'Shaanxi',
             label: 'Shaanxi',
         },
         {
-            value: 'CN-37',
+            value: 'Shandong',
             label: 'Shandong',
         },
         {
-            value: 'CN-14',
+            value: 'Shanxi',
             label: 'Shanxi',
         },
         {
-            value: 'CN-51',
+            value: 'Sichuan',
             label: 'Sichuan',
         },
         {
-            value: 'CN-71',
+            value: 'Taiwan',
             label: 'Taiwan',
         },
         {
-            value: 'CN-53',
+            value: 'Yunnan',
             label: 'Yunnan',
         },
         {
-            value: 'CN-33',
+            value: 'Zhejiang',
             label: 'Zhejiang',
         },
         {
-            value: 'CN-91',
+            value: 'Hong Kong',
             label: 'Hong Kong',
         },
         {
-            value: 'CN-92',
+            value: 'Macao',
             label: 'Macao',
         },
     ],
